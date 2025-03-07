@@ -1,0 +1,30 @@
+kemp-7K4U-ord-wat-ts explicit solvent: 40ps MD with res on protein and ordered water
+ &cntrl
+  imin   = 0,
+  irest  = 0,
+  ntx    = 1,
+  ntb    = 1,
+  cut    = 8,
+  ntr    = 1,
+  ntc    = 2,
+  ntf    = 2,
+  nscm   = 1,
+  tol    =0.000001
+  tempi  = 100,
+  temp0  = 150.0,
+  ntt    = 3,
+  ig=-1, ioutfm = 1,
+  iwrap = 1,
+  gamma_ln = 1.0,
+  nstlim = 20000, dt = 0.002
+  ntpr = 200, ntwx = 200, ntwr = 2000
+ /
+Hold the protein and cofactor and ligand fixed with weak restraints except ordered water
+125.0
+RES 1 300
+END
+ordered water restraint
+500.0
+RES 301 305
+END
+END

@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH -n 1 #numero de cpus que utilitza
+
+#module load Amber/amber16
+module load Amber/Amber18_Ambertools19_CUDA-8.0.44
+cpptraj *.prmtop << eor 
+trajin md1.nc 1 1 1
+
+strip :WAT
+strip :Na+
+
+center origin :1-299
+image origin center familiar
+
+center origin :1-300
+image origin center familiar
+
+trajout hg317_ts.pdb pdb
+eor
