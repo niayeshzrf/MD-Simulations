@@ -13,12 +13,12 @@ trajin md7.nc 1 last 1
 trajin md8.nc 1 last 1
 trajin md9.nc 1 last 1
 trajin md10.nc 1 last 1
-trajin md11.nc 1 last 1
+
 
 strip :WAT
 strip :Na+
 
-center origin :1-299
+center origin :1-300
 image origin center familiar
 
 center origin :1-300
@@ -26,6 +26,6 @@ image origin center familiar
 
 rms first mass
 
-trajout dyn_hg317_ts_rep1.dcd dcd
+trajout Trajectory.dcd dcd
 
 eor

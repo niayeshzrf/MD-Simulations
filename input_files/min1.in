@@ -1,4 +1,4 @@
-kemp-7K4U-ord-wat-ts explicit solvent: initial minimisation solvent + ions
+Protein explicit solvent: initial minimisation solvent + ions
  &cntrl
   imin   = 1,
   maxcyc = 10000,
@@ -10,7 +10,6 @@ kemp-7K4U-ord-wat-ts explicit solvent: initial minimisation solvent + ions
  /
 Hold the protein and cofactor and ligand fixed and ordered water
 500.0
-RES 1 300
-RES 301 305
+RES 1 300 #Number of amino acids
 END
 END

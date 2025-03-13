@@ -1,4 +1,4 @@
-kemp-7K4U-ord-wat-ts explicit solvent: 2000000ps (200ns) MD production-replica1 (NVT)-res on ordered water
+Protein explicit solvent: 2000000ps (200ns) MD production-replica1 (NVT)
  &cntrl
   imin   = 0,
   irest = 1,
@@ -17,8 +17,4 @@ kemp-7K4U-ord-wat-ts explicit solvent: 2000000ps (200ns) MD production-replica1 
   iwrap=1, ioutfm=1,ig=-1,
   ntpr = 10000, ntwx = 10000, ntwr = 10000,
  /
-Hold fixed only ordered water
-500.0
-RES 301 305
-END
 END

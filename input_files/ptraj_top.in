@@ -9,11 +9,11 @@ trajin md1.nc 1 1 1
 strip :WAT
 strip :Na+
 
-center origin :1-299
+center origin :1-300
 image origin center familiar
 
 center origin :1-300
 image origin center familiar
 
-trajout hg317_ts.pdb pdb
+trajout Topology.pdb pdb
 eor

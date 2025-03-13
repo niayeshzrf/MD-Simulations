@@ -1,11 +1,11 @@
 #!/bin/bash
 #SBATCH -n 1
 #SBATCH --gres=gpu:1
-#SBATCH -J 7K4U-ts
 #SBATCH --time=5-00:00:00 
 #SBATCH --no-requeue 
 module load Amber/Amber18_Ambertools19_CUDA-8.0.44
-##AQUI HAY QUE PONER LO DEL SCRATCH
+
+##HERE YOU HAVE TO PUT THE SCRATCH
 SCRATCH=/scratch/$USER/$SLURM_JOB_ID
 echo Creating temp dir $SCRATCH
 srun mkdir -p $SCRATCH || exit $?

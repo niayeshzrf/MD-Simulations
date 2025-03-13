@@ -1,16 +1,11 @@
-kemp-7K4U-ord-wat-ts explicit solvent: initial minimisation solvent + ions
+Protein explicit solvent: initial minimisation whole system
  &cntrl
   imin   = 1,
   maxcyc = 10000,
-  ncyc   = 10,
+  ncyc   = 1000,
   ntb    = 1,
   ntr    = 1,
   nscm   = 1,
   cut    = 8,
  /
-Hold the protein and cofactor and ligand fixed and ordered water
-500.0
-RES 1 300
-RES 301 305
-END
 END
